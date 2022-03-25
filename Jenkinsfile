@@ -63,7 +63,8 @@ pipeline{
            }
            ]
          }''')
-     
+        }
+     }
     }
     post {  
          always {  
