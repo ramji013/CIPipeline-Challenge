@@ -62,7 +62,7 @@ pipeline{
            "target":"maven-dev-v1"
            }
            ]
-         }''',
+         }''')
      
     }
     post {  
