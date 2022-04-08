@@ -70,7 +70,7 @@ pipeline{
        steps{
          withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', 
                            accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'deploy-s3', 
-                           secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                           secretKeyVariable: 'AWS_SECRET_ACCESS_KEY', region:"us-east-2"]]) {
                         
             s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true,
                      file:'/Users/ramji013/.jenkins/workspace/ci-challenge/target/simplecalculator-0.0.2.jar', bucket:'bucket123417', 
