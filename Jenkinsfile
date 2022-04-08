@@ -74,7 +74,7 @@ pipeline{
                         
             s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true,
                      file:'simplecalculator-0.0.2.jar', bucket:'bucket123417', 
-                     path:'/Users/ramji013/.jenkins/workspace/ci-challenge@2/target/simplecalculator-0.0.2.jar')
+                     path:'/Users/ramji013/.jenkins/workspace/ci-challenge/target/simplecalculator-0.0.2.jar')
        
       }
         }
